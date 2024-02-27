@@ -74,7 +74,8 @@ To whom is this course:
 
 A Databricks Community account, with a single-node compute. Concepts learned:
 - How to setup DataBricks on Microsoft Azure
-- databricks-connect
+- Databricks extension for VS code for running code on the cluster
+- Databricks connection with github (also sparse mode)
 - The Databricks CLI and important commands to interact with DBFS. It will be used to quickly set up the data for practice.
 - In-Depth Data Frame APIs using Pyspark that are relevant for the exam.
 - All Important and Commonly used Data Frame APIs for selecting, renaming, and manipulating columns leveraging Pyspark

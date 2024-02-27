@@ -1,0 +1,7 @@
+{
+  "host": "https://adb-8720015261953620.0.azuredatabricks.net/",
+  "authType": "databricks-cli",
+  "databricksPath": "c:\\Users\\marco\\.vscode\\extensions\\databricks.databricks-1.2.7-win32-x64\\bin\\databricks",
+  "clusterId": "0227-172248-4yda0vrq",
+  "workspacePath": "/Users/00331801@ufrgs.br/.ide/courses-beb135c2"
+}
