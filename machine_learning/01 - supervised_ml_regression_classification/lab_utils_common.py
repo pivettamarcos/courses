@@ -3,6 +3,9 @@ lab_utils_common.py
     functions common to all optional labs, Course 1, Week 2 
 """
 
+import os
+os.chdir('./work/machine_learning/01 - supervised_ml_regression_classification')
+
 import numpy as np
 import matplotlib.pyplot as plt
 import math
