@@ -4,7 +4,7 @@ lab_utils_common.py
 """
 
 import os
-os.chdir('./work/machine_learning/01 - supervised_ml_regression_classification')
+#os.chdir('./work/machine_learning/01 - supervised_ml_regression_classification')
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -112,7 +112,7 @@ def plt_stationary(x_train, y_train):
 
     #setup useful ranges and common linspaces
     w_range = np.array([-0.001,0.001])
-    b_range = np.array([-20000, 20000])
+    b_range = np.array([-500, 500])
     b_space  = np.linspace(*b_range, 100)
     w_space  = np.linspace(*w_range, 100)
 
@@ -125,7 +125,7 @@ def plt_stationary(x_train, y_train):
             z[i,j] = compute_cost(x_train, y_train, tmp_w[i][j], tmp_b[i][j] )
             if z[i,j] == 0: z[i,j] = 1e-6
 
-    w0=0;b=10000    #initial point
+    w0=0;b=130    #initial point
     ### plot model w cost ###
     f_wb = np.dot(x_train,w0) + b
     #mk_cost_lines(x_train,y_train,w0,b,ax[0])
