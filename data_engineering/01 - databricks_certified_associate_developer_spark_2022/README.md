@@ -24,19 +24,6 @@ This Databricks Certified Associate Developer for Apache Spark is different from
 - It's fast-paced and precise to the point
 - All the material will be made available as a Databricks Archive. Just upload it into your platform and start using it
 
-Concretely, here's what we'll learn to pass the Databricks Certified Associate Developer for Apache Spark exam:
-
-- Setup of Databricks Environment using Azure
-- The Databricks CLI and important commands to interact with DBFS. It will be used to quickly set up the data for practice.
-- In-Depth Data Frame APIs using Pyspark that are relevant for the exam.
-- All Important and Commonly used Data Frame APIs for selecting, renaming, and manipulating columns leveraging Pyspark
-- Pyspark Data Frame APIs for filtering, dropping, sorting, and aggregating rows
-- Pyspark Data Frame APIs for joining, reading, writing, and partitioning DataFrames
-- Working with UDFs using Pyspark and Spark SQL Functions
-- Apache Spark Architectural Concepts which are very important for the exam
-- Adaptive Query Execution which been introduced in recent times.
-- Tips and Key Strategies to ROCK the exam
-
 This Databricks Certified Associate Developer for Apache Spark course is full of opportunities to apply your knowledge:
 
 There are many hands-on lectures in every section
