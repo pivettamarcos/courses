@@ -6,7 +6,7 @@ This course provides an in-depth understanding of supervised machine learning te
 ## Table of Contents
 - [Course Overview](#course-overview)
 - [Authors](#authors)
-- [Additional Info about Implementation](#implementation)
+- [Concepts learned](#concepts)
 
 ## Course Overview
 In the first course of the Machine Learning Specialization, you will:
@@ -29,9 +29,22 @@ By the end of this Specialization, you will have mastered key concepts and gaine
 - Aarti Bagul: Curriculum Engineer
 - Geoff Ladwig: Curriculum Engineer @ DeepLearning.AI
 
-## Implementation
+## Concepts learned
+From the course itself:
 
-A spark+hadoop stack was used for additional challange to implement this course's work. Jupyterlab is used as the driver of spark jobs. 1 node is simulated, with 2 spark workers. HDFS is used as the distirbuted storage. Concepts learned:
+- Single and Multiple Linear Regression
+- Logistic Regression
+- Cost Function (MSE for regression, Log-loss for binary classification)
+- Gradient Descent (batch and stochastic)
+- Learning Rate
+- Feature Scaling
+- Feature Engineering (operation between features to create new ones)
+- Polynomial Regression (features squared or cubed)
+- Decision Boundary
+- Underfitting and Overfitting
+- Regularization (Ridge)
+
+A spark+hadoop stack (A - spark_hadoop_jupyter) was used for additional challange to implement this course's work. Jupyterlab is used as the driver of spark jobs. 1 node is simulated, with 2 spark workers. HDFS is used as the distirbuted storage. Concepts learned:
 
 - Spark + hadoop + jupyterlab_driver containerized stack in docker (docker-compose)
     - YARN ( Resource Manager (in own machine) -> Node Manager (in own machine) )
@@ -50,4 +63,6 @@ A spark+hadoop stack was used for additional challange to implement this course'
     - stat.Correlation
     - regression.LinearRegression
     - evaluation.RegressionEvaluator
+    - evaluation.MulticlassClassificationEvaluator
+    - Pipeline
     
