@@ -52,7 +52,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
   int* hashTable = createHashTable(target+1);
   initHashTable(hashTable, target);
   
-  // O(n) time complexity and O(n) space complexity
+  // O(1) time complexity and O(n) space complexity
   for (int i = 0; i < numsSize; i++) {
     if (nums[i] <= target) {
       int complementIndex = hashTable[hash(target, nums[i])];
