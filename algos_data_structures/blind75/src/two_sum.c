@@ -27,21 +27,18 @@
  *  -109 <= nums[i] <= 109
  *  -109 <= target <= 109
  *  Only one valid answer exists.
+ *  22 / 63 testcases passed
 */
 
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
 
-int* createHashTable(int size){
-  return (int*) malloc(size * sizeof(int));
-}
-
 unsigned int hash (int target, int number){
   return target - number;
 }
 
-void initHashTable(int* hashTable, int size){
+void initHashTable(int** hashTable, int size){
   for (int i = 0; i < size; i++){
     hashTable[i] = -1;
   }
@@ -49,28 +46,46 @@ void initHashTable(int* hashTable, int size){
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
   // Create a hash table with hash fuction = target - x
-  int* hashTable = createHashTable(target+1);
-  initHashTable(hashTable, target);
-  
+  // avoid stack overflow by malloc into heap
+  size_t sizeTable = 9999999;
+  int** hashTable = (int**)malloc(sizeTable * sizeof(int*));
+  int** middleHashTable = hashTable + (sizeTable / 2);
+  initHashTable(hashTable, sizeTable);
+
   // O(1) time complexity and O(n) space complexity
+  printf("\n");
   for (int i = 0; i < numsSize; i++) {
-    if (nums[i] <= target) {
-      int complementIndex = hashTable[hash(target, nums[i])];
-      if (complementIndex != -1) { 
+    int hashResult = hash(target, nums[i]);
+    int** tempPtr = hashTable;
+
+    if(hashResult < 0){
+        tempPtr = middleHashTable;
+        hashResult = abs(hashResult);
+    }
+
+    int* complementPtr = tempPtr[hashResult];
+    
+    if (complementPtr != NULL) {
         *returnSize = 2;
         int* indices = (int*) malloc(*returnSize * sizeof(int));
 
         indices[1] = i;
-        indices[0] = complementIndex; 
-        
+        indices[0] = *complementPtr; 
+
         free(hashTable);
         return indices;
-      }
-      hashTable[nums[i]] = i;
     }
+
+    tempPtr = hashTable;
+    if(nums[i]<0){
+        tempPtr = middleHashTable;
+    }
+
+    tempPtr[abs(nums[i])] = (int*)malloc(sizeof(int));
+    *tempPtr[abs(nums[i])] = i;
   }
   *returnSize = 0;
-  free(hashTable);
+  free(hashTable); 
 
   /*  O(n^2) time complexity and O(1) space complexity
    *  for (int i = 0; i < numsSize; i++) {
@@ -83,7 +98,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
    *    }
    *  }    
   */
-
+  
   return NULL;
 }
 
