@@ -25,9 +25,7 @@ struct ListNode* reverseNode(struct ListNode *currentNodePointer, struct ListNod
     printf("nextNodePointer: %p\n", currentNodePointer->next);
     previousNodePointer = currentNodePointer;
 
-    currentNodePointer = tmpCurrentNodeNextPointer;
-
-    reverseNode(currentNodePointer, previousNodePointer);
+    return reverseNode(tmpCurrentNodeNextPointer, previousNodePointer);
 }
  
 struct ListNode* reverseList(struct ListNode* head) {
