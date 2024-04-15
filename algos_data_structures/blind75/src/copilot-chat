@@ -1,0 +1,29 @@
+## User ---
+
+how to initialize struct in c
+
+## Copilot ---
+
+In C, you can initialize a struct at the time of declaration. Here's an example:
+
+```c
+struct Person {
+    char name[50];
+    int age;
+    float salary;
+};
+
+int main() {
+    struct Person person1 = {"John Doe", 30, 55000.0f};
+
+    printf("Name: %s\nAge: %d\nSalary: %.2f\n", person1.name, person1.age, person1.salary);
+
+    return 0;
+}
+```
+
+In this example, a struct `Person` is defined with three members: `name`, `age`, and `salary`. Then, in the `main` function, an instance of `Person` named `person1` is declared and initialized with the values "John Doe", 30, and 55000.0 respectively. The `printf` function is then used to print these values.
+
+## User ---
+
+
