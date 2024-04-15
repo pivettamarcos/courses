@@ -9,6 +9,10 @@ struct ListNode {
 };
  
 struct ListNode* reverseList(struct ListNode* head) {
+  if(head == NULL || head->next == NULL){
+    return head;
+  }
+
   printf("head: %d\n", head->val);
   
   struct ListNode *currentNodePointer = head;
