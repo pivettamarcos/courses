@@ -7,6 +7,28 @@ struct ListNode {
       int val;
       struct ListNode *next;
 };
+
+struct ListNode* reverseNode(struct ListNode *currentNodePointer, struct ListNode *previousNodePointer){
+    printf("currentNodePointer: %p\n", currentNodePointer);
+    printf("val: %d\n",currentNodePointer->val);
+    
+    struct ListNode *tmpCurrentNodeNextPointer = currentNodePointer->next;
+    if(previousNodePointer != NULL){
+      if(currentNodePointer->next == NULL){
+        currentNodePointer->next = previousNodePointer;
+        return currentNodePointer;
+      }
+      currentNodePointer->next = previousNodePointer;    
+    }else{
+      currentNodePointer->next = NULL;
+    }
+    printf("nextNodePointer: %p\n", currentNodePointer->next);
+    previousNodePointer = currentNodePointer;
+
+    currentNodePointer = tmpCurrentNodeNextPointer;
+
+    reverseNode(currentNodePointer, previousNodePointer);
+}
  
 struct ListNode* reverseList(struct ListNode* head) {
   if(head == NULL || head->next == NULL){
@@ -18,13 +40,16 @@ struct ListNode* reverseList(struct ListNode* head) {
   struct ListNode *currentNodePointer = head;
   struct ListNode *previousNodePointer = NULL;
   // iterative
+  /* 
   while(1){
-    printf("%d",currentNodePointer->val);
     struct ListNode *tmpCurrentNodeNextPointer = currentNodePointer->next;
     if(previousNodePointer != NULL){
+
       if(currentNodePointer->next == NULL){
+
         currentNodePointer->next = previousNodePointer;
         break;
+
       }
       currentNodePointer->next = previousNodePointer;    
     }else{
@@ -35,7 +60,11 @@ struct ListNode* reverseList(struct ListNode* head) {
 
     currentNodePointer = tmpCurrentNodeNextPointer;
   }
+  */
 
+  // recursive
+  currentNodePointer = reverseNode(currentNodePointer, previousNodePointer);
+  printf("currentNodePointer: %p\n", currentNodePointer);
   printf("\nReversed\n");
   struct ListNode *tmpCurrentNodePointer = currentNodePointer;
   while(1){
