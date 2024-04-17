@@ -1,3 +1,6 @@
 [submodule "A - spark_hadoop_jupyter"]
 	path = A - spark_hadoop_jupyter
 	url = https://github.com/pivettamarcos/platform-ds.git
+[submodule "B - spark_mlflow_minikube"]
+	path = B - spark_mlflow_minikube
+	url = https://github.com/pivettamarcos/tsops.git
