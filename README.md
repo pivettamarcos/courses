@@ -65,7 +65,7 @@ A repo for all completed and ongoing courses
     - [ ] Symmetric Tree
     - [ ] Binary Tree Level Order Traversal
     - [ ] Binary Tree Zigzag Level Order Traversal
-    - [ ] Maximum Depth of Binary Tree
+    - [ x ] Maximum Depth of Binary Tree
     - [ ] Construct Binary Tree from Preorder and Inorder Traversal
     - [ ] Convert Sorted Array to Binary Search Tree
     - [ ] Balanced Binary Tree
