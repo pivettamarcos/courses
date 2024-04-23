@@ -1,9 +1,10 @@
-# courses
-A repo for all completed and ongoing courses
+# courses and books
+A repo for all completed and ongoing courses and book practices
 
 - Machine Learning
-    - [x] Supervised Machine Learning: Regression and Classification
-    - [ ] Advanced Learning Algorithms
+    - [x] C01 - Supervised Machine Learning: Regression and Classification
+    - [ ] C02 - Advanced Learning Algorithms
+    - [ ] B01 - Build a Large Language Model (From Scratch)
 
 - Data Engineering
     - [x] Get Started with Databricks Machine Learning Databricks Academy
