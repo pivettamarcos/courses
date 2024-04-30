@@ -160,6 +160,7 @@ A repo for all completed and ongoing courses and book practices
     - [ ] Find K Closest Elements
     - [ ] Maximum Width of Binary Tree
     - [ ] Top K Frequent Words
+    - [x] Top K Frequent Elements
     - [ ] Accounts Merge
     - [ ] Flood Fill
     - [ ] Asteroid Collision
