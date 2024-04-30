@@ -26,8 +26,9 @@ Concepts learned:
 - Describe the core components that make up the Databricks Lakehouse Platform.
 - Describe functionality behind key components of Databricks ML (Feature Store, AutoML, MLflow). 
 - Navigate the Databricks ML user-interface. 
+- Navigate DBFS (Databricks FileSystem)
 - Use pyspark pandas wrapper
-- Create a feature table using Feature Store in Databricks ML. 
+- Create a feature table using Feature Store (Delta Tables) in Databricks ML. 
 - Develop a baseline model using AutoML (UI and code) in Databricks ML.
 - Manage the machine learning model lifecycle using Model Registry in Databricks ML. 
 - Use a registered model and feature table to perform batch inference in Databricks ML.
