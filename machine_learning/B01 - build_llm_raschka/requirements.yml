@@ -1,0 +1,9 @@
+name: build_llm
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - tiktoken=0.6.0
+    - pytorch
+    - python==3.9
+    - ipykernel==6.28.0

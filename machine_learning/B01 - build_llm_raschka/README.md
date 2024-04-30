@@ -26,5 +26,10 @@ From the book:
     - Predict next word vs predict masked words
 - Foundational vs fine-tuned model
 - Regex tokenization and Byte Pair Encoding (tiktoken)
+- Sampling input words and target output with sliding window (GPTDatasetV1)
+- Embedding tokens using torch.nn.Embedding
+- Augument token embedding
+    - Absolute embedding
+    - Relative embedding
 
     
