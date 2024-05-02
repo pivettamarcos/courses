@@ -1,0 +1,17 @@
+name: ml_C02
+channels:
+    - defaults
+    - conda-forge
+    - pytorch-test
+    - nvidia
+dependencies:
+    - pytorch=2.3.0
+    - lightning
+    - numpy
+    - scikit-learn
+    - pandas
+    - seaborn
+    - matplotlib
+    - python=3.9
+    - ipykernel=6.28.0
+    - cudatoolkit=11.8

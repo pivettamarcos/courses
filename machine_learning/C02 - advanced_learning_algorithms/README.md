@@ -33,7 +33,11 @@ By the end of this Specialization, you will have mastered key theoretical concep
 ## Concepts learned
 From the course itself:
 
-- Intuition behind neurons and neural networks
-- 
+- Intuition behind neurons, weights, bias, layers and activation functions in neural networks
+- Intuition behind forward propagation
+
+Pytorch and its wrapper Lightning was used to train the neural networks. Lightning provides:
+- every loop of the training process is a method inside the NN class
+- checkpointing, progress bars
 
     
