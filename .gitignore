@@ -4,3 +4,4 @@ __pycache__
 .databricks
 .databricks_venv
 lightning_logs
+*.parquet
