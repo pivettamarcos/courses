@@ -35,6 +35,19 @@ From the course itself:
 
 - Intuition behind neurons, weights, bias, layers and activation functions in neural networks
 - Intuition behind forward propagation
+- Training and forward propping a neural network in Tensorflow
+- Intuition behind different activation functions (mainly linear, sigmoid, softmax and reLU)
+- Multiclass and multilabel classification
+- Intuition behind back prop
+- Evaluating a model using holdout and cross-validation
+- Bias/variance tradeoff and fixing high variance and high bias
+- Neural networks and bias/variance
+- Iterative loop of ML development
+- Transfer learning/fine tuning
+- Full cycle of a ML project
+- Error metrics for skewed datasets
+- Decision trees and its learning algorithm
+
 
 Pytorch and its wrapper Lightning was used to train the neural networks. Lightning provides:
 - every loop of the training process is a method inside the NN class
